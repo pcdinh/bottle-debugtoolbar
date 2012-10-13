@@ -1,0 +1,2 @@
+recursive-include bottle_debugtoolbar/templates *.html
+recursive-include bottle_debugtoolbar/static *
