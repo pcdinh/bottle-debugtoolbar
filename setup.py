@@ -12,7 +12,7 @@ except:
 
 setup(
     name='Bottle-DebugToolbar',
-    version='0.3',
+    version='0.4',
     url='http://github.com/sramana/bottle-debugtoolbar',
     license='BSD',
     author='Ramana Varanasi',

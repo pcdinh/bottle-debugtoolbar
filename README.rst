@@ -49,6 +49,11 @@ Name                                  Description                             De
 ``DEBUG_TB_PANELS``                   List of module/class names of panels    enable all built-in panels
 ====================================  =====================================   ==========================
 
+Credits
+---------
+1. `django-debug-toolbar <https://github.com/django-debug-toolbar/django-debug-toolbar>`_
+2. `flask-debug-toolbar <https://github.com/mgood/flask-debugtoolbar>`_
+3. `django-dtpanel-htmltidy <https://github.com/joymax/django-dtpanel-htmltidy>`_
 
 Contributing
 ------------
