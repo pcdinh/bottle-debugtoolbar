@@ -16,6 +16,7 @@ default_config = {
         'bottle_debugtoolbar.panels.request_vars.RequestVarsDebugPanel',
         'bottle_debugtoolbar.panels.logger.LoggingPanel',
         'bottle_debugtoolbar.panels.profiler.ProfilerDebugPanel',
+        'bottle_debugtoolbar.panels.htmltidy.HTMLTidyDebugPanel',
     )
 }
 
