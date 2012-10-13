@@ -134,12 +134,10 @@ class DebugToolbarPlugin(object):
             for panel in self.debug_toolbar.panels:
                 panel.process_response(bottle.request, content)
 
-            response_html = content.decode(bottle.response.charset)
             toolbar_html = self.debug_toolbar.render_toolbar()
 
             content = replace_insensitive(
-                response_html, '</body>', toolbar_html + '</body>')
-            content = content.encode(bottle.response.charset)
+                content, '</body>', toolbar_html + '</body>')
             bottle.response.content_length = len(content)
             return content
 
