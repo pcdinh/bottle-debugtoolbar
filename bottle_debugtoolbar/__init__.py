@@ -130,7 +130,8 @@ class DebugToolbarPlugin(object):
         # If the http response code is 200 then we process to add the
         # toolbar to the returned html response.
         if (bottle.response.status_code == 200
-            and bottle.response.headers['content-type'].startswith('text/html')):
+            and bottle.response.headers['content-type'].startswith('text/html')
+            and isinstance(content, basestring)):
             for panel in self.debug_toolbar.panels:
                 panel.process_response(bottle.request, content)
 
